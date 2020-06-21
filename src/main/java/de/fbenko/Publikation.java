@@ -2,11 +2,22 @@ package de.fbenko;
 
 public class Publikation {
 
-	public Publikation(String text, String string) {
+	private String text;
+	private String autor;
+	private int textlaenge;
+	private double honorar;
+
+	public Publikation(String text, String autor) {
+		this.text = text;
+		this.autor = autor;
 	}
 
 	public double textHonorarBerechnen() {
-        return 0;
+
+		if(this.text.length() == 0) {
+			throw new IllegalArgumentException();
+		}
+		return 1;
 	}
 
 	public int bilderZaehlen() {
