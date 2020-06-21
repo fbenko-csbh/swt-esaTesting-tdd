@@ -29,7 +29,14 @@ public class Publikation {
 	}
 
 	public int bilderZaehlen() {
-		return 0;
+		String word = "Picture";
+		String temp[] = this.text.split(" ");
+		int count = 0;
+		for (int i = 0; i < temp.length; i++) {
+		   if (word.equals(temp[i])) 
+			  ++count;
+		}  
+		return count;
 	}
     
 }

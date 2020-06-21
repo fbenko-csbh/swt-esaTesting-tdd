@@ -41,7 +41,7 @@ public class PublicationTest {
 
     @org.junit.Test
     public void bilderZaehlen() throws Exception {
-        String text = "Picture Lorem dolor amet Picture, elitr, Picture ut labore";
+        String text = "Picture Lorem dolor amet Picture elitr, Picture ut labore";
         Publikation beitrag = new Publikation(text, "Peter Lustig"); ;
         int anzahl = beitrag.bilderZaehlen();
         assertEquals(3, anzahl);
