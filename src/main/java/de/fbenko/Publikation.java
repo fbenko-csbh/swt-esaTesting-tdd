@@ -17,6 +17,13 @@ public class Publikation {
 		if(this.text.length() == 0) {
 			throw new IllegalArgumentException();
 		}
+		for(int i = 0; i < this.text.length(); i++) {    
+            if(text.charAt(i) != ' ')    
+                this.textlaenge++;    
+		}
+		if(this.textlaenge > 100) {
+			throw new IllegalArgumentException();
+		}
 		return 1;
 	}
 
