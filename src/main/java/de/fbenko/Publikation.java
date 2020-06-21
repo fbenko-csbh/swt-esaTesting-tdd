@@ -24,7 +24,8 @@ public class Publikation {
 		if(this.textlaenge > 100) {
 			throw new IllegalArgumentException();
 		}
-		return 1;
+		this.honorar = this.textlaenge * 0.05;
+		return this.honorar;
 	}
 
 	public int bilderZaehlen() {
